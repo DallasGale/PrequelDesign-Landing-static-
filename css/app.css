@@ -443,6 +443,7 @@ a:hover {
   flex-direction: column;
   padding-top: var(--space-60);
   max-width: 1148px;
+  align-items: center;
   gap: var(--space-40);
 }
 .card {
@@ -843,6 +844,7 @@ a:hover {
   }
 
   .strategic-partner__cards {
+    align-items: flex-start;
     flex-direction: row;
   }
 
