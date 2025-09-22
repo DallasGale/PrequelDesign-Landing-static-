@@ -989,6 +989,12 @@ a:hover {
   :root {
     --hero-height: var(--space-638);
   }
+
+  .btn {
+    font-size: 20px;
+    border-radius: var(--space-10);
+    padding: var(--space-12) var(--space-68);
+  }
   .tertiary-btn__icon-wrapper {
     grid-template-columns: var(--space-30) 1fr;
   }
@@ -1024,12 +1030,6 @@ a:hover {
   }
   .body2 {
     font-size: 20px;
-  }
-
-  .btn {
-    font-size: 20px;
-    border-radius: var(--space-10);
-    padding: var(--space-12) var(--space-68);
   }
 
   .tertiary-btn {
