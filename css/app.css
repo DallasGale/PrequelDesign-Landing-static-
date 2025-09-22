@@ -280,15 +280,43 @@ a:hover {
   color: var(--color-white);
 }
 
-.submit-btn__icon-wrapper {
+.secondary-btn__icon-wrapper {
   gap: var(--space-20);
   display: flex;
   flex-direction: row;
 }
 
 .secondary-btn:hover {
-  border-color: var(--color-dark-navy);
+  border-color: var(--color-white);
   background-color: var(--color-navy);
+}
+/* ------------------------------------------------- */
+/* Secondary Button */
+/* ------------------------------------------------- */
+.tertiary-btn {
+  background-color: var(--color-white);
+  border: 2px solid var(--color-white);
+  color: var(--color-dark-navy);
+  padding-left: var(--space-20);
+  width: auto;
+  padding-right: var(--space-20);
+}
+
+.tertiary-btn__icon-wrapper {
+  align-items: center;
+  gap: var(--space-10);
+  display: grid;
+  grid-template-columns: var(--space-20) 1fr;
+  width: 100%;
+}
+
+.tertiary-btn__icon-wrapper img {
+  max-width: var(--space-30);
+}
+
+.tertiary-btn:hover {
+  border-color: var(--color-dark-navy);
+  background-color: var(--color-dark-navy);
 }
 
 /* ------------------------------------------------- */
@@ -359,7 +387,7 @@ a:hover {
 .contact__text {
   display: flex;
   flex-direction: column;
-  gap: var(--space-120);
+  gap: var(--space-60);
 }
 
 .contact__text-group {
@@ -813,16 +841,20 @@ a:hover {
     grid-template-columns: 1fr 1fr;
     gap: var(--space-100);
   }
+
   .strategic-partner__cards {
     flex-direction: row;
   }
+
   .featured__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
   .featured__content-text {
     gap: var(--space-40);
   }
+
   .text-input__field,
   .select-input,
   .textarea-input__field {
@@ -830,12 +862,15 @@ a:hover {
     font-size: 18px;
     margin-bottom: var(--space-30);
   }
+
   .featured__image {
     max-width: 100%;
   }
+
   .header__logo {
     margin-left: -23px;
   }
+
   .header__logo img {
     max-width: 100%;
     max-height: 100%;
@@ -846,6 +881,7 @@ a:hover {
     border-radius: var(--space-30);
     padding: var(--space-48);
   }
+
   .hero__content {
     gap: var(--space-60);
   }
@@ -856,6 +892,7 @@ a:hover {
     display: flex;
     justify-content: flex-end;
   }
+
   .hero__image img {
     max-width: var(--space-400);
   }
@@ -888,6 +925,7 @@ a:hover {
   .why-partner__content {
     padding: var(--space-100) 0;
   }
+
   .why-partner__content-text {
     gap: var(--space-60);
   }
@@ -905,10 +943,10 @@ a:hover {
   }
 
   /* Typography */
-
   .cta-link {
     font-size: 20px;
   }
+
   .display1 {
     font-size: 34px;
   }
@@ -920,9 +958,11 @@ a:hover {
   .display4 {
     font-size: 14px;
   }
+
   .display5 {
     font-size: 45px;
   }
+
   .display5 {
     font-size: 45px;
   }
@@ -936,6 +976,10 @@ a:hover {
     font-size: 13px;
     font-weight: 800;
   }
+
+  .contact__text {
+    gap: var(--space-120);
+  }
 }
 
 /* Breakpoints Extra Large */
@@ -943,6 +987,10 @@ a:hover {
   :root {
     --hero-height: var(--space-638);
   }
+  .tertiary-btn__icon-wrapper {
+    grid-template-columns: var(--space-30) 1fr;
+  }
+
   .hero {
     padding-top: 0;
   }
@@ -979,5 +1027,10 @@ a:hover {
     font-size: 20px;
     border-radius: var(--space-10);
     padding: var(--space-12) var(--space-68);
+  }
+
+  .tertiary-btn {
+    padding-left: var(--space-40);
+    padding-right: var(--space-40);
   }
 }
