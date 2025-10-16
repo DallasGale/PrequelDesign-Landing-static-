@@ -623,6 +623,7 @@ a:hover {
   border: none;
   transition: var(--out-transition);
   box-shadow: var(--box-shadow);
+  position: relative;
 }
 
 .featured-card:hover {
