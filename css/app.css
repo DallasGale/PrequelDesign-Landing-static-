@@ -1,6 +1,4 @@
-/* @import "./header.css";
-@import "./sidebar.css"; */
-/* @import "./app.css"; */
+
 :root {
   --font-family: "Roboto", sans-serif;
   --ff-extra-light: 100;
@@ -32,32 +30,11 @@
 
   --color-trans-white: rgba(255, 255, 255, 0.05);
 
-  /* --color-light-grey: #c7c7c7;
-  --color-grey: #8c8c8c;
-  --color-black: #000000;
-  --color-med-grey: #3c3c3c;
-  --color-dark-grey: #1b1b1b;
-  --color-white: #ffffff;
-
-  --button-primary-bg: rgba(255, 255, 255, 0.1);
-  --button-primary-border: rgba(255, 255, 255, 1);
-
-  --button-secondary-height: 42px;
-
-  --button-text-active-background: rgba(255, 255, 255, 1);
-  --button-text-hover-background: rgba(0, 0, 0, 1);
-  --button-text-active-color: #000000;
-  --button-text-hover-color: #ffffff; */
-
   --background: var(--color-navy);
   --foreground: #ffffff;
   --text-color: #7c7c7c;
   --text-color-highlight: hsl(0, 0%, 100%);
   --footer-background: rgba(27, 27, 27, 1);
-  /* --panel-background: rgba(27, 27, 27, 0.4);
-  --panel-border: rgba(255, 255, 255, 1); */
-
-  /* --overlay-background: rgba(0, 0, 0, 0.9); */
 
   /* Paddings */
   --site-padding: 20px;
@@ -662,7 +639,15 @@ a:hover {
 .featured-card__img {
   object-fit: contain;
   width: 100%;
-  /* height: var(--space-300); */
+}
+
+.featured-card__img-watermark {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  max-width: 70px;
+  top: 20px;
+  left: 20px;
 }
 
 .featured-card-grid {
